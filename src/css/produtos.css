@@ -87,12 +87,11 @@
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4);
 }
 
 .btn-pedido:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     background-color: #b08d4a;
 }
 
