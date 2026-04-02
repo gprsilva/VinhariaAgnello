@@ -87,13 +87,19 @@ input:focus, select:focus, textarea:focus {
     background-color: #2e0808;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 600px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-card {
-        padding: 20px;
-    }
+
+
+
+footer {
+    background-color: #050505;
+    color: #b1b1b1;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
 }
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+

@@ -182,3 +182,16 @@
     color: white;
 }
 
+footer {
+    background-color: #050505;
+    color: #b1b1b1;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+
