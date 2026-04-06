@@ -1,0 +1,201 @@
+/* Importa as cores definidas no projeto */
+:root {
+
+    --cor-vinho: #4A0E0E;
+    --cor-dourado: #C5A059;
+    --cor-fundo: #FDFDFD;
+    --cor-texto: #333333;
+    --cor-texto-claro: #FFFFFF;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+}
+
+
+/* ================= HEADER E NAVEGAÇÃO ================= */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.navbar {
+    background-color: var(--cor-vinho);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+    color: var(--cor-dourado);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--cor-dourado);
+}
+
+/* ================= INFORMAÇÕES DE CONTATO ================= */
+.info-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.info-texto {
+    max-width: 500px;
+}
+
+.info-texto h2 {
+    color: var(--cor-vinho);
+    margin-bottom: 15px;
+}
+
+.info-texto p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.info-video {
+    flex: 1;
+    min-width: 300px; /* Garante que não fique pequeno demais em telas menores */
+    max-width: 560px;
+    border-radius: 10px;
+    overflow: hidden; /* Faz as bordas do iframe ficarem arredondadas */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ================= FORMULÁRIO (Baseado no seu código) ================= */
+.container-pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: var(--cor-fundo);
+    min-height: calc(100vh - 150px);
+}
+
+.form-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 700px;
+    width: 100%;
+}
+
+.form-card h2 {
+    color: var(--cor-vinho);
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.form-card p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--cor-vinho);
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--cor-dourado);
+    box-shadow: 0 0 5px rgba(197, 160, 89, 0.2);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-vinho);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #2e0808;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #050505;
+    color: #b1b1b1;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
