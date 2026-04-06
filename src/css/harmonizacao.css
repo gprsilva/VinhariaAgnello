@@ -6,12 +6,6 @@
     --cor-dourado: #C5A059;
     --cor-texto-claro: #FFFFFF;
     --cor-branco: #FFFFFF;
-    
-    .logo-img {
-    height: 100px;  
-    width: auto;   
-    display: block;
-}
 
 }
 
@@ -27,6 +21,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
 .navbar {
     background-color: var(--cor-vinho);
     padding: 1rem 5%;
@@ -39,20 +44,12 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--cor-dourado); /* Cor que você definiu */
+.navbar .logo {
+    color: var(--cor-dourado);
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.logo img {
-    height: 50px;
-    width: auto;
 }
 
 .nav-links {
