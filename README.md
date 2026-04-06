@@ -41,4 +41,5 @@ O site pode ser visualizado online através do link abaixo:
 🔗 [Clique aqui para acessar o site](https://gprsilva.github.io/VinhariaAgnello/)
 
 ---
+
 *Projeto acadêmico desenvolvido para a disciplina de Front-End Design - 2026(Turma-1ESPQ)*
