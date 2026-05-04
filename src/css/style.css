@@ -663,6 +663,9 @@ footer p {
     flex-direction: row-reverse; 
 }
 
+.vinho-linha.escuro h3 {
+    color: #FFFFFF;
+}
 .foto-vinho {
     width: 200px;
     height: 250px;
