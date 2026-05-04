@@ -953,3 +953,61 @@ footer p {
 
 
 
+
+.equipe-intro {
+    padding: 60px 10% 30px;
+}
+
+.equipe-intro h1 {
+    font-size: 2.6rem;
+    color: var(--cor-vinho);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.equipe-intro h1::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: var(--cor-dourado);
+    display: block;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.equipe-intro p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #444;
+    max-width: 900px;
+}
+
+/* Lista de confiança */
+h3 {
+    margin: 30px 10% 15px;
+    color: var(--cor-vinho);
+}
+
+h3 + ul {
+    margin: 0 10%;
+    list-style: none;
+    padding: 0;
+}
+
+h3 + ul li {
+    background: #fafafa;
+    border-left: 4px solid var(--cor-dourado);
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+h3 + ul li:hover {
+    transform: translateX(6px);
+    background: #fff;
+}
+
+
+
