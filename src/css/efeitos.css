@@ -3,7 +3,7 @@
    ========================================= */
 
 /* --- 1. Base e Pseudo-elementos --- */
-h2::before {
+.i-h2::before {
     content: '';
     display: block;
     width: 40px;
@@ -12,7 +12,7 @@ h2::before {
     margin: 0 auto 10px auto;
 }
 
-p::first-letter {
+.i-p::first-letter {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--cor-vinho);
@@ -43,7 +43,7 @@ input:invalid {
 }
 
 /* --- 4. Botões e CTAs --- */
-button,
+.i-button,
 .btn-cta,
 .btn-pedido,
 .btn-enviar,
@@ -51,7 +51,7 @@ button,
     transition: all 0.3s ease;
 }
 
-button:hover,
+.i-button:hover,
 .btn-cta:hover,
 .btn-pedido:hover,
 .btn-enviar:hover,
