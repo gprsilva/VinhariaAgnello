@@ -1,0 +1,101 @@
+/* ------pseudo-classes-------- */
+.btn-pedido:hover {
+    transform: scale(1.02);
+    background-color: #b08d4a;
+}
+
+
+/* =========================================
+   🎯 1. PSEUDO-ELEMENTOS
+   ========================================= */
+
+/* ::selection - Altera a cor de fundo e do texto quando o usuário seleciona algo na tela */
+::selection {
+    background-color: #722F37; /* Cor de vinho */
+    color: #ffffff;
+}
+
+/* ::first-letter - Cria um efeito de "Letra Capitular" (Drop Cap) elegante no texto da seção "Sobre" */
+.sobre p::first-letter {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #722F37;
+    float: left;
+    margin-right: 10px;
+    line-height: 0.8;
+    font-family: "Georgia", serif;
+}
+
+/* ::after - Adiciona uma linha decorativa charmosa abaixo de todos os títulos h2 */
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #722F37;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* =========================================
+   💫 2. ANIMAÇÕES COM @KEYFRAMES
+   ========================================= */
+
+/* Animação 1: Fade In de baixo para cima (ideal para a entrada de conteúdo) */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação 2: Pulso suave para o botão de Call to Action (chamar a atenção) */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(114, 47, 55, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px 5px rgba(114, 47, 55, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(114, 47, 55, 0);
+    }
+}
+
+/* =========================================
+   APLICAÇÃO DAS ANIMAÇÕES NAS CLASSES HTML
+   ========================================= */
+
+/* Aplicando a animação de entrada nos cards de diferenciais */
+.card {
+    animation: fadeInUp 1s ease-out forwards;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Aplicando a animação de pulso no botão CTA */
+.btn-cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #722F37;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: pulseGlow 2s infinite;
+    transition: background-color 0.3s ease;
+}
+
+/* Pausa a animação e escurece o botão quando o mouse passa por cima */
+.btn-cta:hover {
+    background-color: #4a1e23;
+    animation: none; 
+}
