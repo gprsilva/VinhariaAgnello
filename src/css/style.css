@@ -688,6 +688,14 @@ footer p {
     font-weight: bold;
 }
 
+.vinho-linha.claro .preco {
+    color: #1a1a1a;
+}
+
+.vinho-linha.escuro .preco {
+    color: #FFFFFF;
+}
+
 /* BOTÕES - Estilo básico para aparecerem bem */
 .botao {
     padding: 12px 25px;
