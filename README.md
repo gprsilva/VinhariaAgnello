@@ -28,6 +28,45 @@ O site é composto por **5 páginas HTML**, utilizando práticas de SEO, acessib
 
 ---
 
+## ✨ Efeitos Visuais (CP2)
+
+Para esta etapa, o projeto recebeu uma camada de interatividade e dinamismo utilizando apenas CSS puro. Os novos estilos estão centralizados no arquivo `efeitos.css`, importado globalmente.
+
+### 🎯 Tecnologias e Conceitos Aplicados
+
+#### 1. Pseudo-classes
+Utilizadas para reagir às ações do usuário e estados dos elementos:
+*   `:hover`: Feedback visual em botões, links e cards.
+*   `:first-child`: Estilização diferenciada para o primeiro item do menu.
+*   `:valid` e `:invalid`: Validação visual em tempo real nos campos de formulário (verde para sucesso, vermelho para erro).
+
+#### 2. Pseudo-elementos
+Adição de elementos decorativos sem poluir o HTML:
+*   `::before`: Linha decorativa dourada abaixo dos títulos principais (`h2`).
+*   `::first-letter`: Estilo *drop cap* (capitular) no início dos parágrafos, melhorando a estética editorial.
+*   `::selection`: Personalização da cor de destaque quando o usuário seleciona um texto.
+
+#### 3. Animações e Transições
+*   **Animação de Entrada (`@keyframes`):** O efeito `aparecer` faz com que os cards surjam com um leve movimento de baixo para cima e transição de opacidade ao carregar a página.
+*   **Transições Suaves:** Aplicadas em todos os elementos interativos para garantir que mudanças de cor, sombra e escala ocorram de forma fluida (0.3s).
+
+#### 4. Transformações CSS
+Uso de manipulação espacial para dar profundidade ao layout:
+*   `scale()`: Aumento sutil de botões e links ao passar o mouse.
+*   `translateY()`: Efeito de "levitação" nos cards de produtos.
+*   `rotate()`: Leve inclinação em imagens para um visual moderno.
+*   `skewY()`: Inclinação de seção (diagonal) para quebrar a monotonia do layout horizontal.
+
+---
+
+## 🔧 Como os arquivos foram organizados
+
+1.  Os novos efeitos foram isolados no arquivo `css/efeitos.css`.
+2.  A integração foi feita através da importação no arquivo principal:
+    ```css
+    /* style.css */
+    @import url("efeitos.css");
+
 ## 👥 Integrantes do Grupo
 * [Guilherme Pereira Ruiz da Silva] - RM: [573360]
 * [Gustavo Bidin Marto] - RM: [570272]
