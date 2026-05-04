@@ -1,0 +1,105 @@
+/* =========================================
+   EFEITOS ADICIONAIS DA CP2 - efeitos.css
+   ========================================= */
+
+/* --- 1. Base e Pseudo-elementos --- */
+h2::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--cor-dourado);
+    margin: 0 auto 10px auto;
+}
+
+p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-vinho);
+}
+
+::selection {
+    background-color: var(--cor-dourado);
+    color: black;
+}
+
+/* --- 2. Navegação --- */
+.nav-links li:first-child a {
+    border-bottom: 2px solid var(--cor-dourado);
+}
+
+.nav-links a:hover {
+    letter-spacing: 2px;
+    transform: scale(1.05);
+}
+
+/* --- 3. Formulários --- */
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+/* --- 4. Botões e CTAs --- */
+button,
+.btn-cta,
+.btn-pedido,
+.btn-enviar,
+.botao {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn-cta:hover,
+.btn-pedido:hover,
+.btn-enviar:hover,
+.botao:hover {
+    transform: scale(1.05);
+}
+
+.cta:hover {
+    transform: skewY(-1deg);
+}
+
+/* --- 5. Cards e Imagens --- */
+.card,
+.card-produto,
+.card-historia,
+.valor-card {
+    animation: aparecer 0.8s ease-in-out;
+}
+
+.card,
+.card-produto,
+.valor-card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover,
+.card-produto:hover,
+.valor-card:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card-produto:hover,
+.card-historia:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.img-container img:hover {
+    transform: scale(1.1) rotate(1deg);
+}
+
+/* --- 6. Animações (@keyframes) --- */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

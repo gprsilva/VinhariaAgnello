@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça seu pedido de forma rápida e segura na Vinheria Agnello. Escolha seus vinhos favoritos e receba com praticidade em sua casa.">
+    <meta name="keywords" content="pedido de vinhos, comprar vinho online, vinheria agnello pedido, delivery de vinhos, loja de vinhos online">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/efeitos.css">
+    <title>Fazer Pedido - Vinharia Agnello</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/imgs/logoagnello01.png" alt="Agnello">
+                Vinharia Agnello
+            </div>
+            <ul class="nav-links">
+                <li><a href="produtos.html">Voltar aos Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-pedido">
+        <section class="form-card">
+            <h2>Finalize seu Pedido</h2>
+            <p>Preencha os dados abaixo e entraremos em contato para confirmar a entrega e o pagamento.</p>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp/Telefone</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="vinho">Selecione o Vinho Principal</label>
+                    <select id="vinho" name="vinho" required>
+                        <option value="" disabled selected>Escolha um rótulo...</option>
+                        <option value="casillero">Casillero del Diablo Reserva</option>
+                        <option value="catena">Catena Zapata Malbec Argentino</option>
+                        <option value="periquita">Periquita Reserva</option>
+                        <option value="whispering">Whispering Angel Rosé</option>
+                        <option value="veuve">Veuve Clicquot Ponsardin</option>
+                        <option value="peramanca">Pêra-Manca Branco</option>
+                        <option value="biondisanti">Brunello di Montalcino Biondi-Santi</option>
+                        <option value="cloudybay">Cloudy Bay Sauvignon Blanc</option>
+                        <option value="miolo">Miolo Lote 43</option>
+                        <option value="angelica">Angelica Zapata Chardonnay</option>
+                        <option value="crasto">Quinta do Crasto Reserva</option>
+                        <option value="donmelchor">Don Melchor Cabernet Sauvignon</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidade">Quantidade de Garrafas</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Observações ou Endereço de Entrega</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma preferência ou detalhe para a entrega?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Confirmar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vinheria Agnello. Todos os direitos reservados.</p>
+        <p>São Paulo, SP | Atendimento Familiar e Especializado</p>
+    </footer>
+</body>
+</html>
