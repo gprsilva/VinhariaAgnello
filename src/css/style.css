@@ -72,6 +72,10 @@ body {
     color: var(--cor-dourado);
 }
 
+.nav-links a.active {
+    color: var(--cor-dourado);
+}
+
 .hero {
     height: 80vh;
     background-color: #222;
