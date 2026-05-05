@@ -24,15 +24,35 @@
 }
 
 /* --- 2. Navegação --- */
-.nav-links li:first-child a {
-    border-bottom: 2px solid var(--cor-dourado);
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 6px;
+    
 }
 
-.nav-links a:hover {
-    letter-spacing: 2px;
-    transform: scale(1.05);
+/* linha escondida em TODOS os links */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-dourado);
+    transition: width 0.3s ease-in-out;
 }
 
+/* anima no hover */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* mantém aberto quando for a página ativa */
+.nav-links a.active::after {
+    width: 100%;
+}
 /* --- 3. Formulários --- */
 input:valid {
     border-color: green;
